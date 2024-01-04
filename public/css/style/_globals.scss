@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@mixin nav-structure($width){
+    box-sizing: border-box;
+    height: 100%;
+    top: 0;
+    padding: 0 20px;
+    width: $width;
+    z-index: 1;
+}
+
+@mixin display-flex($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin hoverbutton{
+    .dropbtn{
+        &:hover{
+            background-color: $Charcoal_Grey;
+        }
+        .fa-solid{
+            font-size: 1.5em;
+        }
+    
+    }
+    .dropdown-content{
+        background-color: $Tomato;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: none;
+        min-width: 60px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        a{
+            color: $White;
+            display: block;
+            text-decoration: none;
+            &:hover{
+                color: $Tomato;
+            }
+        }
+    }
+}
+
+$font-name: 'Roboto', sans-serif;
+$bg-color: #1a1a1a;
+$Tomato: #ff6257;
+$transparent: rgba(0, 0, 0, 0);
+$blurcolor: rgba(0, 0, 0, 0.274);
+$Dark_Slate_Grey: hsla(234, 29%, 20%, 0.993);
+$Charcoal_Grey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);

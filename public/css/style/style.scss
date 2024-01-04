@@ -1,0 +1,260 @@
+@import "_globals";
+
+body{
+    background: linear-gradient(rgba(205, 217, 255, 0.116), hsla(4, 100%, 67%, 0.164)), url(../12188676_4890914.jpg);
+    box-sizing: border-box;
+    color:$White;
+    font-family: $font-name;
+    height: 100vh;
+    margin: 0;
+}
+nav{
+    box-sizing: border-box;
+    height: 10vh;
+    position: relative;
+    width: 100vw;
+    .pre-nav{
+        @include display-flex(row, space-between, center);
+        h1{
+            color: $Dark_Slate_Grey;
+            margin-left: 1vw;
+        }
+    }
+    #nav{
+        @include display-flex(row, space-between, center);
+        @include nav-structure(95vw);
+        margin: 0 auto;
+        .nav{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+main{
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+}
+
+.hero{
+    background: $transparent;
+    backdrop-filter: blur(75px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.2);
+    height: 25vh;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    .hero-content{
+        height: 100%;
+        @include display-flex(row, space-evenly, center);
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .hero-text{
+        position: relative;
+        text-align: center;
+    }
+    h1{
+        color: $Dark_Slate_Grey;
+        font-size: 3em;
+        margin: 0 0 0 1rem;
+    }
+    h2{
+        color: $Dark_Slate_Grey;
+        font-size: 1.6em;
+        margin: 5px auto;
+        &::after{
+            content: icon;
+        }
+    }
+    h3{
+        color: $Dark_Slate_Grey;
+        font-size: 1em;
+        margin: 5px auto;
+        text-align: center;
+    }
+    img{
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.2);
+    }
+}
+.h3{
+    border-top: 1px solid $Charcoal_Grey;
+    border-bottom: 1px solid $Charcoal_Grey;
+    margin: 21px auto;
+    width: 80%;
+
+h3{
+    color: $Dark_Slate_Grey;
+    font-size: 0.7em;
+    margin: 5px auto;
+    text-align: center;
+}
+}
+.d-block{
+    height: 100%;
+}
+.content{
+    margin: 10px auto;
+    overflow: hidden;
+    width: 80%;
+}
+.slide {
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            position: absolute;
+            transition: transform 1s ease-out;
+            transform: translateX(100%);
+            width: 100%;
+        }
+        .carousel-item {
+            border-radius: 10px;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            white-space: nowrap;
+
+        
+
+        .slide.active {
+            display: inline-block;
+            transform: translateX(0);
+        }
+
+        #prev, #next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            /* Add styles as needed to make the arrows look good */
+          }
+          
+          #prev {
+            left: 10px;
+          }
+          
+          #next {
+            right: 10px;
+          }
+        }
+
+
+@media (max-width: 768px){
+}
+
+@media (max-width: 768px){
+
+nav{
+        #nav{
+        background-color: $transparent;
+        @include display-flex(row, space-between, center);
+        @include nav-structure(100%);
+        margin: 0 auto;
+        .nav{
+            img{
+                box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.2);
+            }.fa-chevron-left{
+                 color: $Dark_Slate_Grey;
+                 font-size: 1.5em;
+                 z-index: 5;
+                 position: fixed;
+                 }
+        }
+        .nav-links{
+            display: inline-block;
+            position: relative;
+            &:hover{
+                    .fa-bell{
+                        color: $Charcoal_Grey;
+                        
+                    }
+                .dropdown-content{
+                        display: block;
+                }
+            }
+            .dropbtn{
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                .fa-solid{
+                    color: $Dark_Slate_Grey;
+                    font-size: 1.9em;
+                    position: relative;
+                    z-index: 3;
+                    .ribbon {
+                        width: 30px;
+                        font-size: 7px;
+                        padding: 4px;
+                        position: absolute;
+                        right: -25px;
+                        top: -12px;
+                        text-align: center;
+                        border-radius: 25px;
+                        transform: rotate(20deg);
+                        background-color: $Tomato;
+                        color: white;
+                      }
+                }
+            
+            }
+            .dropdown-content{
+                background-color: $Tomato;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                display: none;
+                min-width: 60px;
+                padding: 5px;
+                position: absolute;
+                z-index: 3;
+                a{
+                    color: $White;
+                    display: block;
+                    text-decoration: none;
+                    &:hover{
+                        color: $Tomato;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer{
+    background-color: $transparent;
+    backdrop-filter: blur(75px);
+    border-radius: 10px;
+    bottom: 0;
+    box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: $White;
+    left: 0;
+    @include display-flex(row, space-between, center);
+    margin: 0 10vw;
+    margin-bottom: 2vh;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    z-index: 10;
+        .footer{
+            margin: auto;
+        }
+        .footer-icon{
+            .fa-solid{
+                color: $Dark_Slate_Grey;
+                font-size: 1.5em;
+                margin: 0 0.5rem;
+                &:hover{
+                    color: $Tomato;
+                }
+            }  
+        }
+    }
+}
+.active{
+    color: $Tomato !important;
+} 

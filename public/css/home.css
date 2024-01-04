@@ -1,0 +1,151 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+#clock{
+    color: var(--Charcoal_Grey);
+}
+#weather-container {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow:  inset -2px -1px 15px 0px hsl(234deg 29% 20% / 35%);
+    color: var(--Dark_Slate_Grey);
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+#weather-container h1{
+    margin: 10px 0;
+}
+.weather-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1px 1em 0;
+}
+#weatherinput{
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset -2px -1px 15px 0px hsl(234deg 29% 20% / 35%);
+    height: 25px;
+    max-width: 30%;
+    padding-left: 6px;
+    width: 32vw;
+}
+#settings-page{
+    bottom: 10vh;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.settings-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.settings-image{
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+}
+.s-image{
+    /*background: url(/assets/images/img_avatar2.png) no-repeat;*/
+    height: 100%;
+    width: 100%;
+}
+.settings-content{
+    background: url(../images/12188676_4890914.jpg) no-repeat;
+    border-radius: 35px 35px 0 0;
+    bottom: 45px;
+    height: 65vh;
+    padding: 10px 45px;
+    position: relative;
+    z-index: 2;
+}
+.settings-content h2{
+    color: var(--Dark_Slate_Grey);
+    position: relative;
+    text-align: center;
+}
+.settings-content ul {
+    color: var(--Charcoal_Grey);
+    list-style-type: none;
+    padding: 0;
+}
+  
+.settings-content ul li {
+padding: 24px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.settings-content ul li:last-child {
+border-bottom: none;
+}
+
+#chat-page{
+    bottom: 10vh;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+}
+.bgimg {
+    background: transparent;
+    backdrop-filter: blur(95px);
+    color: var(--Tomato);
+    font-size: 25px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+#explore-page{
+    bottom: 10vh;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+} 

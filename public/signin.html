@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/otherstyle.css" rel="stylesheet">
+      <link href="fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet">
+      <link href="fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
+      <link href="fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
+      <link href="fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+      
+      <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    
+    </head>
+    <body>
+    
+      <div role="main">
+        <div class="main">
+          <div class="img-content">
+            <div class="sign-up-img"></div>
+          </div>
+          <div class="sign-up-form">
+            <div class="content">
+              <!-- Sign-up form start -->
+              <h1>Stay updated!</h1>
+    
+              <h3>Sign in to your account today.</h3>
+              <h4>Don't have an account? <a href="/signup">Sign Up</a></h4>
+    
+              <div class="content-info"> 
+                <div class="content-list">
+                  <img src="/images/icon-list.svg" alt="List Icon">
+                  <h4> Product discovery and building what matters</h4>
+                </div>
+                <div class="content-list">
+                  <img src="/images/icon-list.svg" alt="List Icon">    
+                  <h4> You can use your email to sign in. Just click on the icon.</h4>
+                </div>
+              </div>
+    
+              <form class="sign-up-Form" id="form" action="/signin" method="POST">
+               
+                <div class="form-content">
+                  <div class="label">
+                    <div class="usn">Username</div> 
+                    <div class="erro-r"></div>
+                  </div>
+                 <div class="sme dpass">
+                  <div class="col-75">     
+                <input type="text" name="usernameOrEmail" id="username" class="username sme but fpass" placeholder="" autocomplete="off" required>
+                 </div>
+                 <div class="col-25">
+                  <i class="fa-solid fa-user"></i>
+                 </div>
+                 </div>
+                </div>
+
+                <div class="form-content">
+                  <div class="label">
+                    <div class="psw">Password</div> 
+                    <div class="erro-r erro-rp"></div>
+                  </div>
+                 <div class="sme dpass">
+                  <div class="col-75">     
+                <input type="password" name="password" id="password" class="password sme but fpass" placeholder="" autocomplete="off" required>
+                 </div>
+                 <div class="col-25">
+                  <i class="fa-solid fa-eye-slash"></i>
+                 </div>
+                 </div>
+                </div>
+
+                <div>
+                <input type="submit" class="button sme" value="Sign In">
+                </div>
+              </form>
+              <!-- Sign-up form end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution" role="contentinfo">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.ayocodex.site">Ayomide Ojutalayo</a>.
+      </div>
+       
+                  <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p></p>
+              </div>
+
+            </div>
+    </body>
+    <style>
+      .button {
+            display: block;
+       }
+    </style>
+    <script src="js/signin.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="app.js"></script>-->
+  </html>

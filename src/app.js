@@ -38,7 +38,7 @@ app.get('/signup', (req, res) => {
     res.sendFile(join(__dirname, '../public/signup.html'));
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
     console.log(`Server running on port ${port}/`);
 });
 
@@ -49,11 +49,11 @@ const sessionSecret = crypto.randomBytes(64).toString('hex');
 
 //console.log(sessionSecret);
 
-app.use(session({
+/*app.use(session({
   secret: sessionSecret,
   resave: false,
   saveUninitialized: false
-}));
+}));*/
 
 
 const mydb = __dirname + '/../database/mydb.db';

@@ -10,9 +10,9 @@ function signup(firstname, lastname) {
       <link href="fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
       <link href="fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
       <link href="fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet">
-      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
       
-      <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+      <title>Noow App</title>
     
     </head>
     <body>
@@ -29,7 +29,7 @@ function signup(firstname, lastname) {
     
               <h4>Please create your account with us today or <a href="/signin">Sign In</a></h4>
     
-              <form class="sign-up-Form" id="form" action="/welcome" method="POST" enctype="multipart/form-data">
+              <form class="sign-up-Form" id="form" action="/sign-up" method="POST" enctype="multipart/form-data">
               <div class="tab">
               <div class="fullname">    
               <div class="form-content col-50">
@@ -89,7 +89,7 @@ function signup(firstname, lastname) {
               </div>
 
                
-                  <input type="submit" class="button sme" value="Subscribe">
+                  <input type="submit" class="button sme" value="Submit">
                <div style="display: flex; justify-content: end;">
                   <div class="sme" id="prevBtn" >Prev</div>
                   <div class="sme" id="nextBtn" >Next</div>
@@ -130,9 +130,9 @@ function successmsg(email, firstname, lastname) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     
       <link href="css/style.css" rel="stylesheet">
-      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
       
-      <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+      <title>Noow App</title>
     
     </head>
     <body>
@@ -142,7 +142,7 @@ function successmsg(email, firstname, lastname) {
         <div class="success-message" data-wow-delay="0.1s" style=" display: block;">
           <div class="divv">
           <div class="success-message-content">
-            <img alt="An Icon Succes Image" src="/assets/images/icon-success.svg">
+            <img alt="An Icon Succes Image" src=/images/icon-success.svg">
             <h1>Dear ${firstname} ${lastname},</h1>
             <h2>Thanks for subscribing!</h2>
             <h4>A confirmation email has been sent to <b>${email}</b>. 
@@ -185,9 +185,9 @@ function sign_in() {
     <link href="fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
     <link href="fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     
-    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <title>Noow App</title>
   
   </head>
   <body>
@@ -207,15 +207,15 @@ function sign_in() {
   
             <div class="content-info"> 
               <div class="content-list">
-                <img src="/assets/images/icon-list.svg" alt="List Icon">
+                <img src=/images/icon-list.svg" alt="List Icon">
                 <h4> Product discovery and building what matters</h4>
               </div>   
               <div class="content-list">
-                <img src="/assets/images/icon-list.svg" alt="List Icon">
+                <img src=/images/icon-list.svg" alt="List Icon">
                 <h4> Measuring to ensure updates are a success</h4>
               </div>
               <div class="content-list">
-                <img src="/assets/images/icon-list.svg" alt="List Icon">    
+                <img src=/images/icon-list.svg" alt="List Icon">    
                 <h4> You can use your email to sign in. Just click on the icon.</h4>
               </div>
             </div>

@@ -28,7 +28,7 @@ const app = express();
 
 // Start the server
 const join = require('path').join;
-const hostname = '127.0.0.1';
+//const hostname = '127.0.0.1';
 const port = process.env.PORT || 6600 || 5500;
 
 app.use(express.static(path.join(__dirname, '../public')));
@@ -39,7 +39,7 @@ app.get('/signup', (req, res) => {
 });
 
 app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running on port ${port}/`);
 });
 
 
@@ -55,9 +55,6 @@ app.use(session({
   saveUninitialized: false
 }));
 
-// If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
-const TOKEN_PATH = 'token1.json';
 
 const mydb = __dirname + '/../database/mydb.db';
 // Open a database handle

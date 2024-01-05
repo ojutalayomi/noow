@@ -73,7 +73,6 @@ dist
 .dynamodb/
 
 # CSV data files
-*.csv
+
 
 # Database files
-*.db

@@ -248,7 +248,7 @@ async function sendSignInEmail(email) {
     attachments: [
       {
         filename: `Company-Logo.png`,
-        path: '../public/images/congrats.png', // Replace with your file path
+        path: './public/images/congrats.png', // Replace with your file path
         cid: 'unique@kreata.ee' //same cid value as in the html img src
       },
     ]

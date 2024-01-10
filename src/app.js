@@ -248,7 +248,7 @@ async function sendSignInEmail(email) {
     attachments: [
       {
         filename: `Company-Logo.png`,
-        path: './public/images/congrats.png', // Replace with your file path
+        path: 'https://ojutalayomi.github.io/feetbook/FeetBook/public/images/congrats.png', // Replace with your file path
         cid: 'unique@kreata.ee' //same cid value as in the html img src
       },
     ]
@@ -319,7 +319,7 @@ async function sendConfirmationEmail(email, firstname, lastname, username, req) 
     attachments: [
         {
           filename: `Company-Logo.png`,
-          path: '../public/images/congrats.png', // Replace with your file path
+          path: 'https://ojutalayomi.github.io/feetbook/FeetBook/public/images/congrats.png', // Replace with your file path
           cid: 'unique@kreata.ee' //same cid value as in the html img src
         },
         /*{
